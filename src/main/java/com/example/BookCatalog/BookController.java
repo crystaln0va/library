@@ -32,8 +32,8 @@ public class BookController {
             bookRepository.save(b);
             return new ResponseEntity<Copy>(copy, HttpStatus.OK);
         } else {
-            return new ResponseEntity<CustomErrorType>
-                    (new CustomErrorType("No copy available"),HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>
+                    (new CustomErrorType("No copy available"), HttpStatus.OK);
         }
     }
 

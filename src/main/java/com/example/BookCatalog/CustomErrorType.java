@@ -7,7 +7,7 @@ public class CustomErrorType {
         this.errorMessage = errorMessage;
     }
 
-    String getErrorMessage() {
+    public String getErrorMessage() {
         return errorMessage;
     }
 }
